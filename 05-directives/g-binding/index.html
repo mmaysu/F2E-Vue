@@ -37,20 +37,18 @@
           </button>
         </div>
 
-        <!-- 2.2 Style 綁定 -->
-        <div
-          class="color-box"
-          :style="{
-        backgroundColor: selectedTheme,
-        width: boxSize + 'px',
-        height: boxSize + 'px'
-      }"
-        ></div>
-
         <div class="size-control">
           <label>調整大小：</label>
           <input type="range" v-model="boxSize" min="50" max="200" />
         </div>
+        <!-- 2.2 Style 綁定 -->
+        <div class="color-box"
+        :style="{
+        backgroundColor: selectedTheme,
+        width: boxSize + 'px',
+        height: boxSize + 'px'}">
+        </div>
+
       </section>
 
       <!-- 3. 動態屬性綁定 -->

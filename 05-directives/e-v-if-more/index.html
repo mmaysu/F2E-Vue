@@ -25,7 +25,7 @@
         <div class="correct-example">
           <h4>✅ 正確寫法：使用計算屬性過濾</h4>
           <div v-for="item in activeItems" :key="item.id">{{ item.name }}</div>
-          <!-- <div v-for="(item, index) in activeItems" :key="index">{{ item.name }}</div> -->
+          <div v-for="(item, index) in activeItems" :key="index">{{ item.name }}</div>
         </div>
       </section>
     </div>
